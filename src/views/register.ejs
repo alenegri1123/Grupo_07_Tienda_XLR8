@@ -1,0 +1,27 @@
+<%- include('partials/metadata')  %> 
+<%- include('partials/header')  %> 
+
+    
+    <main>
+        <form> 
+            <section class="form-register">
+                <div class="logo1">
+                    <a href="/">
+                        <img src="\images\completo-XLR8-mediano.png">
+                    </a>
+                </div>
+                <h4>Formulario de Registro</h4>
+                <input class="controls" type="text" name="nombres" id="nombres" placeholder="Nombre y Apellido">
+                <input class="controls" type="email" name="correo" id="correo" placeholder="Correo Electrónico o Teléfono">
+                <input class="controls" type="password" name="password" id="password" placeholder="Ingrese su Contraseña (Mínimo 8 caracteres)" minlength="8">
+                <input class="controls" type="password" name="password" id="password" placeholder="Reescriba su Contraseña" minlength="8">
+                </br>
+                <h5>Estoy de acuerdo con <a href="#">Terminos y Condiciones</a></h5>
+                <input class="botons" type="submit" value="Registrar">
+                <h6><a href="/ingresar">¿Ya tienes una Cuenta?</a></h6>  
+          </section>
+          </form>
+    </main>
+
+    <%- include('partials/footer')  %>     
+
