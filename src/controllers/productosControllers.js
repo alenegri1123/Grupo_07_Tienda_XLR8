@@ -1,11 +1,14 @@
 const path = require('path');
+const productos = require('../data/productos.json');
 
 const cart = (req, res) => {
     res.render('./productCart')
 }
 
 const productDetail = (req, res) => {
-    res.render('./productDetail')
+    const productoId = req.params.id;
+    const producto = productos.find(producto => producto.id == productoId);
+    res.render('./productDetail', { producto })
 }
 
 const crearProducto = (req, res) => {
