@@ -8,12 +8,12 @@
             <div class="container">
                 <div class="div-foto">
                     <div class="div-contenedor">
-                        <img class="img-grande" src="/images/productos/h-buzo-01.jpg" alt="">
-                        <img class="img-grande1" src="/images/productos/h-buzo-01.jpg" alt="">
-                        <img class="img-grande2" src="/images/productos/h-buzo-01.jpg" alt="">
+                        <% producto.imagenes.forEach(function(imagen){ %>
+                            <img class="img-grande" src="<%= imagen -%>" alt="">
+                        <% }); %>
                     </div>
                     <div class="div-contenedor-img-principal">
-                        <img class="img-chica "src="/images/productos/h-buzo-01-b.jpg" alt="">
+                        <img class="img-chica "src="<%= producto.imagen -%>" alt="">
                     </div>
                     
                 </div>
@@ -22,11 +22,11 @@
             <div class="container-1">
                 <div class="div-detalle">
                     <div class="detalle-titulo">
-                        <h1>BUZO PUMA</h1>
+                        <h1><%= producto.titulo %></h1>
                     </div>
     
                     <div class="price">
-                        <p class="precio-producto">$700</p>
+                        <p class="precio-producto">$<%= producto.precio %></p>
                     </div>
     
                     <div class="cuotas">
@@ -44,9 +44,9 @@
     
                     <div class="talles">
                         <p class="talle">Talles: </p>
-                        <button>S</button>
-                        <button>M</button>
-                        <button>L</button>
+                        <% producto.talles.forEach(function(talle){ %>
+                            <button><%= talle %></button>
+                        <% }); %>
                     </div>
     
                     <form class="cantidad" action="">
