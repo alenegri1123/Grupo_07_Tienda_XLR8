@@ -524,7 +524,7 @@ footer .menu-prendas {
         flex-direction: row;
         font-size: 15px;
     }
-    #icono-oferta {               
+    .icono-oferta {               
         width: 65px;  
         padding: 5px; 
         align-items: center;

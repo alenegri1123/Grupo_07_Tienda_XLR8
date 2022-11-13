@@ -456,7 +456,7 @@ article .fotoProducto img #foto {
     width: 90%;
 }
 
-#icono-oferta {               
+.icono-oferta {               
     width: 40px;  
     padding: 3px; 
     align-items: center;
@@ -472,7 +472,7 @@ article .fotoProducto img #foto {
     
 }
 
-#icono-oferta :hover {
+.icono-oferta :hover {
     cursor: pointer;
     transform: scale(1.2);    
 }
@@ -749,7 +749,7 @@ footer .menu-contacto {
         flex-direction: row;
         font-size: 15px;
     }
-    #icono-oferta {               
+    .icono-oferta {               
         width: 65px;  
         padding: 5px; 
         align-items: center;
@@ -781,7 +781,7 @@ footer .menu-contacto {
 }
 
 @media (min-width: 1080px) {
-    #icono-oferta {               
+    .icono-oferta {               
         width: 90px;  
         padding: 6px; 
         align-items: center;
