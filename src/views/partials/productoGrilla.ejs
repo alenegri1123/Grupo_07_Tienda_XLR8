@@ -3,7 +3,7 @@
         <% if(modoOfertas === true) {%>
             <img src="/images/discount-label-for-commerce.png" class="icono-oferta"></i>
         <% }; %>
-        <a href="/producto/detalle/<%= productoItem.id %>">
+        <a href="/productos/detalle/<%= productoItem.id %>">
             <img src="<%= productoItem.imagen -%>">
         </a>
     </div>
@@ -27,6 +27,6 @@
             <p> Talle: <%= productoItem.talles.join(' ') -%></p>
             <p> Color: <%= productoItem.color -%></p>
         </div>
-        <button class="boton-de-compra" href="/producto/detalle">COMPRAR</button>
+        <button class="boton-de-compra" href="/productos/detalle">COMPRAR</button>
     </div>
 </article>

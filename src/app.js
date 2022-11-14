@@ -22,7 +22,7 @@ const usuariosRouters = require('./routers/usuariosRouters');
 
 app.use(express.json());
 app.use('/', mainRouters);
-app.use('/producto', productosRouters);
+app.use('/productos', productosRouters);
 app.use('/usuario', usuariosRouters);
 
 const port = process.env.PORT || 9558;
