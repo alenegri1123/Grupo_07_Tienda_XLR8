@@ -19,7 +19,7 @@
                 </div>
                 
             </div>
-            <div class="container-1">
+            <form class="container-1" method="POST" action="/productos/carrito">
                 <div class="div-detalle">
                     <div class="detalle-titulo">
                         <h1><%= producto.titulo %></h1>
@@ -37,10 +37,10 @@
                         <a class="a-pagos" href="#">ver medios de pagos</a>
                     </div>
     
-                    <form class="form-color" action="">
+                    <div class="form-color" action="">
                         <label class="label-color "for="color">Color:</label>
                         <input type="color" id="color" name="color">
-                    </form>
+                    </div>
     
                     <div class="talles">
                         <p class="talle">Talles: </p>
@@ -49,15 +49,15 @@
                         <% }); %>
                     </div>
     
-                    <form class="cantidad" action="">
+                    <div class="cantidad" >
                         <label for="cantidad">Cantidad: </label>
                         <input class="input" type="number" id="cantidad" name="cantidad">
     
-                    </form>
+                    </div>
     
-                    <button onclick="window.location.href='#';" class="boton-agregar-carrito"> Agregar al carrito</button>
+                    <button onclick="window.location.href='/productos/carrito';" class="boton-agregar-carrito"> Agregar al carrito</button>
     
-                    <form class="envio" action="">
+                    <!-- <form class="envio" action="">
                         <label class="label-envio" for="envio">Envio: </label>
                         <input type="text" placeholder="ingrese su codigo postal" id="envio" name="envio">
                         <button class="calcular-boton">Calcular</button>
@@ -65,11 +65,17 @@
     
                     <div class="olvide-postal">
                         <a class="a-postal" href="#">Olvide mi codigo postal</a>
+                    </div> -->
+
+                    <div class="div-contenedor-button">
+                        <button class="button-div">Editar producto</button>
+                        <button class="button-div">Eliminar producto</button>
                     </div>
+
                 </div>
     
                
-            </div>
+            </form>
         </div>
 
         
