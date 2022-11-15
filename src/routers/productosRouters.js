@@ -7,7 +7,7 @@ router.get('/', productosController.productsGet)
 
 router.get('/detalle/:id', productosController.productDetail)
 
-router.get('/carrito', productosController.cart)
+router.post('/carrito', productosController.cart)
 
 router.get('/crear', productosController.crearProducto)
 

@@ -359,6 +359,11 @@ button, .talle{
     color: #ACEF35;
 }
 
+.div-contenedor-button{
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
 
 /*::::::::::::::::::::::: HASTA ACA DETALLE DE PRODUCTO :::::::::::::::::::::::*/
 
