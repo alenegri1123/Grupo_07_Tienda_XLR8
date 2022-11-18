@@ -14,20 +14,19 @@ const crearProducto = (req, res) => {
 }
 
 const guardarProducto = (req, res) => {
-    camposDeNuevoProducto.id = productos.length+1;
-        
     // Agregar producto
-    let camposDeNuevoProducto = req.body;
-    
+    const camposDeNuevoProducto = req.body;
+        
     // Pushear producto al array
-    productos.push(camposDeNuevoProducto);    
-
+    camposDeNuevoProducto.id = productos.length+1;
+    productos.push(camposDeNuevoProducto);
+    
     // Lo convierte a texto plano (formato JSON)
     fs.writeFileSync(productsFilePath, JSON.stringify(productos, null, 2));
     // el 2 es para guardar prolijo el JSON
 
     //retorna el resultado.
-    return res.send(camposDeNuevoProducto)
+    return res.redirect('/');
 }
 
 /*const productDetail = (req, res) => {
