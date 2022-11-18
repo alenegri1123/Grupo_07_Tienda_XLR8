@@ -1,178 +1,336 @@
 [
-    {
-       "id":1,
-       "titulo":"BUZO PUMA",
-       "imagen":"/images/productos/h-buzo-01.jpg",
-       "imagenes": ["/images/productos/h-buzo-01-b.jpg"],
-       "descuento":"10",
-       "precio":"700",
-       "genero":"Hombre",
-       "talles":["X"],
-       "color":"Negro/Gris"
-    },
-    {
-       "id":2,
-       "titulo":"SHORT UNDER ARMOUR",
-       "imagen":"/images/productos/m-short-02.jpg",
-       "imagenes": ["/images/productos/m-short-02-b.jpg"],
-       "descuento":"10",
-       "precio":"790",
-       "genero":"Mujer",
-       "talles":["L"],
-       "color":"Lila"
-    },
-    {
-       "id":3,
-       "titulo":"CAMPERA REEBOK",
-       "imagen":"/images/productos/m-campera-02.jpg",
-       "imagenes":["/images/productos/m-campera-02-b.jpg"],
-       "descuento":"30",
-       "precio":"2700",
-       "genero":"Unisex",
-       "talles":["M"],
-       "color":"Azul"
-    },
-    {
-       "id":4,
-       "titulo":"CALZA ASICS",
-       "imagen":"/images/productos/m-calza-01.jpg",
-       "imagenes":["/images/productos/m-calza-01-b.jpg"],
-       "descuento":"15",
-       "precio":"900",
-       "genero":"Mujer",
-       "talles":["L"],
-       "color":"Rosa"
-    },
-    {
-       "id":5,
-       "titulo":"BUZO ADIDAS",
-       "imagen":"/images/productos/h-buzo-02.jpg",
-       "imagenes":["/images/productos/h-buzo-02-b.jpg"],
-       "descuento":"30",
-       "precio":"2000",
-       "genero":"Unisex",
-       "talles":["M"],
-       "color":"Azul Francia"
-    },
-    {
-       "id":6,
-       "titulo":"CALZA ASICS",
-       "imagen":"/images/productos/h-calza-01.jpg",
-       "imagenes":["/images/productos/h-calza-01-b.jpg"],
-       "descuento":"25",
-       "precio":"2500",
-       "genero":"Hombre",
-       "talles":["L"],
-       "color":"Negro"
-    },
-    {
-       "id":7,
-       "titulo":"CAMPERA PUMA",
-       "imagen":"/images/productos/h-campera-01.jpg",
-       "imagenes":["/images/productos/h-campera-01-b.jpg"],
-       "descuento":"40",
-       "precio":"4500",
-       "genero":"Hombre",
-       "talles":["M"],
-       "color":"Verde"
-    },
-    {
-       "id":8,
-       "titulo":"PANTALON PUMA",
-       "imagen":"/images/productos/h-pantalon-02.jpg",
-       "imagenes":["/images/productos/h-pantalon-02-b.jpg"],
-       "descuento":"25",
-       "precio":"1500",
-       "genero":"Hombre",
-       "talles":["L"],
-       "color":"Azul Oscuro"
-    },
-    {
-       "id":9,
-       "titulo":"REMERA ASICS",
-       "imagen":"/images/productos/h-remera-01.jpg",
-       "imagenes":["/images/productos/h-remera-01-b.jpg"],
-       "descuento":"10",
-       "precio":"600",
-       "genero":"Hombre",
-       "talles":["XL"],
-       "color":"Azul"
-    },
-    {
-       "id":10,
-       "titulo":"CAMPERA PUMA",
-       "imagen":"/images/productos/h-campera-02.jpg",
-       "imagenes":["/images/productos/h-campera-02-b.jpg"],
-       "descuento":"40",
-       "precio":"3000",
-       "genero":"Unisex",
-       "talles":["M"],
-       "color":"Negro"
-    },
-    {
-       "id":11,
-       "titulo":"PANTALON UNDER ARMOUR",
-       "imagen":"/images/productos/m-pantalon-01.jpg",
-       "imagenes":["/images/productos/m-pantalon-01-b.jpg"],
-       "descuento":"50",
-       "precio":"2800",
-       "genero":"Unisex",
-       "talles":["M"],
-       "color":"Gris"
-    },
-    {
-       "id":12,
-       "titulo":"SHORT ADIDAS",
-       "imagen":"/images/productos/h-short-02.jpg",
-       "imagenes":["/images/productos/h-short-02-b.jpg"],
-       "descuento":"20",
-       "precio":"1000",
-       "genero":"Hombre",
-       "talles":["XL"],
-       "color":"Gris"
-    },
-    {
-       "id":13,
-       "titulo":"BUZO UNDER ARMOUR",
-       "imagen":"/images/productos/m-buzo-02.jpg",
-       "imagenes":["/images/productos/m-buzo-02-b.jpg"],
-       "descuento":"10",
-       "precio":"1400",
-       "genero":"Mujer",
-       "talles":["M"],
-       "color":"Durazno"
-    },
-    {
-       "id":14,
-       "titulo":"REMERA UNDER ARMOUR",
-       "imagen":"/images/productos/m-remera-01.jpg",
-       "imagenes":["/images/productos/m-remera-01-b.jpg"],
-       "descuento":"40",
-       "precio":"2500",
-       "genero":"Mujer",
-       "talles":["S"],
-       "color":"Negro"
-    },
-    {
-       "id":15,
-       "titulo":"SHORT ADIDAS",
-       "imagen":"/images/productos/h-short-01.jpg",
-       "imagenes":["/images/productos/h-short-01-b.jpg"],
-       "descuento":"10",
-       "precio":"2900",
-       "genero":"Hombre",
-       "talles":["L"],
-       "color":"Negro"
-    },
-    {
-       "id":16,
-       "titulo":"CALZA ASICS",
-       "imagen":"/images/productos/m-calza-02.jpg",
-       "imagenes":["/images/productos/m-calza-02-b.jpg"],
-       "descuento":"50",
-       "precio":"4000",
-       "genero":"mujer",
-       "talles":["L"],
-       "color":"Negro"
-    }
- ]
+  {
+    "id": 1,
+    "titulo": "BUZO PUMA",
+    "imagen": "/images/productos/h-buzo-01.jpg",
+    "imagenes": [
+      "/images/productos/h-buzo-01-b.jpg"
+    ],
+    "descuento": "10",
+    "precio": "700",
+    "genero": "Hombre",
+    "talles": [
+      "X"
+    ],
+    "color": "Negro/Gris"
+  },
+  {
+    "id": 2,
+    "titulo": "SHORT UNDER ARMOUR",
+    "imagen": "/images/productos/m-short-02.jpg",
+    "imagenes": [
+      "/images/productos/m-short-02-b.jpg"
+    ],
+    "descuento": "10",
+    "precio": "790",
+    "genero": "Mujer",
+    "talles": [
+      "L"
+    ],
+    "color": "Lila"
+  },
+  {
+    "id": 3,
+    "titulo": "CAMPERA REEBOK",
+    "imagen": "/images/productos/m-campera-02.jpg",
+    "imagenes": [
+      "/images/productos/m-campera-02-b.jpg"
+    ],
+    "descuento": "30",
+    "precio": "2700",
+    "genero": "Unisex",
+    "talles": [
+      "M"
+    ],
+    "color": "Azul"
+  },
+  {
+    "id": 4,
+    "titulo": "CALZA ASICS",
+    "imagen": "/images/productos/m-calza-01.jpg",
+    "imagenes": [
+      "/images/productos/m-calza-01-b.jpg"
+    ],
+    "descuento": "15",
+    "precio": "900",
+    "genero": "Mujer",
+    "talles": [
+      "L"
+    ],
+    "color": "Rosa"
+  },
+  {
+    "id": 5,
+    "titulo": "BUZO ADIDAS",
+    "imagen": "/images/productos/h-buzo-02.jpg",
+    "imagenes": [
+      "/images/productos/h-buzo-02-b.jpg"
+    ],
+    "descuento": "30",
+    "precio": "2000",
+    "genero": "Unisex",
+    "talles": [
+      "M"
+    ],
+    "color": "Azul Francia"
+  },
+  {
+    "id": 6,
+    "titulo": "CALZA ASICS",
+    "imagen": "/images/productos/h-calza-01.jpg",
+    "imagenes": [
+      "/images/productos/h-calza-01-b.jpg"
+    ],
+    "descuento": "25",
+    "precio": "2500",
+    "genero": "Hombre",
+    "talles": [
+      "L"
+    ],
+    "color": "Negro"
+  },
+  {
+    "id": 7,
+    "titulo": "CAMPERA PUMA",
+    "imagen": "/images/productos/h-campera-01.jpg",
+    "imagenes": [
+      "/images/productos/h-campera-01-b.jpg"
+    ],
+    "descuento": "40",
+    "precio": "4500",
+    "genero": "Hombre",
+    "talles": [
+      "M"
+    ],
+    "color": "Verde"
+  },
+  {
+    "id": 8,
+    "titulo": "PANTALON PUMA",
+    "imagen": "/images/productos/h-pantalon-02.jpg",
+    "imagenes": [
+      "/images/productos/h-pantalon-02-b.jpg"
+    ],
+    "descuento": "25",
+    "precio": "1500",
+    "genero": "Hombre",
+    "talles": [
+      "L"
+    ],
+    "color": "Azul Oscuro"
+  },
+  {
+    "id": 9,
+    "titulo": "REMERA ASICS",
+    "imagen": "/images/productos/h-remera-01.jpg",
+    "imagenes": [
+      "/images/productos/h-remera-01-b.jpg"
+    ],
+    "descuento": "10",
+    "precio": "600",
+    "genero": "Hombre",
+    "talles": [
+      "XL"
+    ],
+    "color": "Azul"
+  },
+  {
+    "id": 10,
+    "titulo": "CAMPERA PUMA",
+    "imagen": "/images/productos/h-campera-02.jpg",
+    "imagenes": [
+      "/images/productos/h-campera-02-b.jpg"
+    ],
+    "descuento": "40",
+    "precio": "3000",
+    "genero": "Unisex",
+    "talles": [
+      "M"
+    ],
+    "color": "Negro"
+  },
+  {
+    "id": 11,
+    "titulo": "PANTALON UNDER ARMOUR",
+    "imagen": "/images/productos/m-pantalon-01.jpg",
+    "imagenes": [
+      "/images/productos/m-pantalon-01-b.jpg"
+    ],
+    "descuento": "50",
+    "precio": "2800",
+    "genero": "Unisex",
+    "talles": [
+      "M"
+    ],
+    "color": "Gris"
+  },
+  {
+    "id": 12,
+    "titulo": "SHORT ADIDAS",
+    "imagen": "/images/productos/h-short-02.jpg",
+    "imagenes": [
+      "/images/productos/h-short-02-b.jpg"
+    ],
+    "descuento": "20",
+    "precio": "1000",
+    "genero": "Hombre",
+    "talles": [
+      "XL"
+    ],
+    "color": "Gris"
+  },
+  {
+    "id": 13,
+    "titulo": "BUZO UNDER ARMOUR",
+    "imagen": "/images/productos/m-buzo-02.jpg",
+    "imagenes": [
+      "/images/productos/m-buzo-02-b.jpg"
+    ],
+    "descuento": "10",
+    "precio": "1400",
+    "genero": "Mujer",
+    "talles": [
+      "M"
+    ],
+    "color": "Durazno"
+  },
+  {
+    "id": 14,
+    "titulo": "REMERA UNDER ARMOUR",
+    "imagen": "/images/productos/m-remera-01.jpg",
+    "imagenes": [
+      "/images/productos/m-remera-01-b.jpg"
+    ],
+    "descuento": "40",
+    "precio": "2500",
+    "genero": "Mujer",
+    "talles": [
+      "S"
+    ],
+    "color": "Negro"
+  },
+  {
+    "id": 15,
+    "titulo": "SHORT ADIDAS",
+    "imagen": "/images/productos/h-short-01.jpg",
+    "imagenes": [
+      "/images/productos/h-short-01-b.jpg"
+    ],
+    "descuento": "10",
+    "precio": "2900",
+    "genero": "Hombre",
+    "talles": [
+      "L"
+    ],
+    "color": "Negro"
+  },
+  {
+    "id": 16,
+    "titulo": "CALZA ASICS",
+    "imagen": "/images/productos/m-calza-02.jpg",
+    "imagenes": [
+      "/images/productos/m-calza-02-b.jpg"
+    ],
+    "descuento": "50",
+    "precio": "4000",
+    "genero": "mujer",
+    "talles": [
+      "L"
+    ],
+    "color": "Negro"
+  },
+  {
+    "titulo-producto": "dsf",
+    "descripcion-area": "sdfds",
+    "foto-1": "",
+    "foto-2": "",
+    "foto-3": "",
+    "precio": "1323",
+    "precio-promo": "5",
+    "sku": "123",
+    "talle": "small",
+    "color": "negro",
+    "categories": [
+      "hombre",
+      "remeras"
+    ],
+    "id": 17
+  },
+  {
+    "titulo-producto": "dsf",
+    "descripcion-area": "sdfds",
+    "foto-1": "",
+    "foto-2": "",
+    "foto-3": "",
+    "precio": "1323",
+    "precio-promo": "5",
+    "sku": "123",
+    "talle": "large",
+    "color": "negro",
+    "categories": [
+      "mujer",
+      "pantalones"
+    ],
+    "id": 18
+  },
+  {
+    "titulo-producto": "gfnghmgh",
+    "descripcion-area": "fgfghf",
+    "foto-1": "",
+    "foto-2": "",
+    "foto-3": "",
+    "precio": "855",
+    "precio-promo": "5",
+    "sku": "555",
+    "talle": "small",
+    "color": "negro",
+    "genero": "mujer",
+    "categories": "remeras",
+    "id": 19
+  },
+  {
+    "titulo-producto": "rtyrtyrt",
+    "descripcion-area": "fdgdffg",
+    "foto-1": "",
+    "foto-2": "",
+    "foto-3": "",
+    "precio": "587678",
+    "precio-promo": "55555",
+    "sku": "56",
+    "talle": "small",
+    "color": "negro",
+    "genero": "mujer",
+    "categories": "camperas",
+    "id": 20
+  },
+  {
+    "titulo-producto": "rtyrtyrt",
+    "descripcion-area": "fdgdffg",
+    "foto-1": "",
+    "foto-2": "",
+    "foto-3": "",
+    "precio": "5876",
+    "precio-promo": "555",
+    "sku": "56",
+    "talle": "medium",
+    "color": "negro",
+    "genero": "hombre",
+    "categories": "short",
+    "id": 21
+  },
+  {
+    "titulo-producto": "rtyrtyrt",
+    "descripcion-area": "fdgdffg",
+    "foto-1": "",
+    "foto-2": "",
+    "foto-3": "",
+    "precio": "5876",
+    "precio-promo": "555",
+    "sku": "56",
+    "talle": "medium",
+    "color": "negro",
+    "genero": "hombre",
+    "categories": "short",
+    "id": 22
+  }
+]

@@ -3,7 +3,8 @@
 
     
     <main>
-        <form> 
+        <form action="/productos/crear" method="POST">
+            <!--enctype="multipart/form-data"-->
             <section class="form-register">
                 <div class="logo1">
                     <a href="/">
@@ -34,31 +35,32 @@
                     <option value="color">COLOR</option>                    
                 </select>
                 <div class="categorias">
+                    <!-- REVISAR CSS -->
                     <p>CATEGORIAS </p>
-                    <label>HOMBRE<input type='checkbox' name='categories' value="hombre"> </label>
+                    <label>HOMBRE<input type='radio' name='genero' value="hombre"> </label>
                     </br>
-                    <label>MUJER<input type='checkbox' name='categories' value="mujer"> </label>
+                    <label>MUJER<input type='radio' name='genero' value="mujer"> </label>
                     </br>
-                    <label>UNISEX<input type='checkbox' name='categories' value="unisex"> </label>
+                    <label>UNISEX<input type='radio' name='genero' value="unisex"> </label>
                     </br>
                 </div> 
                 <div class="categorias">
                     <p> TIPO DE PRENDA </p>
-                    <label>REMERAS<input type='checkbox' name='categories' value="remeras"> </label>
+                    <label>REMERAS<input type='radio' name='categories' value="remeras"> </label>
                     </br>
-                    <label>PANTALONES<input type='checkbox' name='categories' value="pantalones"> </label>
+                    <label>PANTALONES<input type='radio' name='categories' value="pantalones"> </label>
                     </br>
-                    <label>SHORTS<input type='checkbox' name='categories' value="short"> </label>
+                    <label>SHORTS<input type='radio' name='categories' value="short"> </label>
                     </br>
-                    <label>CALZAS<input type='checkbox' name='categories' value="calzas"> </label>
+                    <label>CALZAS<input type='radio' name='categories' value="calzas"> </label>
                     </br>
-                    <label>CAMPERAS<input type='checkbox' name='categories' value="camperas"> </label>
+                    <label>CAMPERAS<input type='radio' name='categories' value="camperas"> </label>
                     </br>
                 </div>
                 </br>
-                <input class="botons" type="submit" value="NUEVO PRODUCTO">
-                <input class="botons" type="submit" value="EDITAR PRODUCTO">
-                <input class="botons" type="submit" value="ELIMINAR PRODUCTO">
+                <button class="botons" type="submit"> AGREGAR PRODUCTO</button>
+                <button class="botons" type="submit"> EDITAR PRODUCTO</button>
+                <button class="botons" type="submit"> ELIMINAR PRODUCTO </button>
                  
           </section>
           </form>

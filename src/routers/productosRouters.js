@@ -6,19 +6,16 @@ const productosController = require('../controllers/productosControllers');
 router.get('/', productosController.productsGet)
 
 router.get('/crear', productosController.crearProducto)
+router.post('/crear', productosController.guardarProducto) 
 
-router.get('/detalle/:id', productosController.productDetail)
+/*router.get('/detalle/:id', productosController.productDetail)
 
-router.post('/', productosController.productsGet)
+router.get('/edit/:id', productosController.editarProducto)
 
-router.get('/detalle/:id/edit', productosController.productDetail)
+router.put('/edit/:id', productosController.guardarEdicionProducto)
 
-router.put('/detalle/:id', productosController.productDetail)
+router.delete('/delete/:id', productosController.borrarProducto)
 
-router.delete('/detalle/:id', productosController.productDetail)
-
-router.get('/carrito', productosController.cart)
-
-
+router.get('/carrito', productosController.cart)*/
 
 module.exports = router;
