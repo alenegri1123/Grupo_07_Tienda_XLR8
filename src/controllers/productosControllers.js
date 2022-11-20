@@ -29,7 +29,7 @@ const guardarProducto = (req, res) => {
     return res.redirect('/');
 }
 
-/*const productDetail = (req, res) => {
+const productDetail = (req, res) => {
     const productoId = req.params.id;
     const producto = productos.find(producto => producto.id == productoId);
     res.render('products/productDetail', { producto })
@@ -49,8 +49,6 @@ const borrarProducto = (req, res) => {
 
 const cart = (req, res) => {
     res.render('products/productCart')
-}*/
+}
 
-module.exports = {productsGet, crearProducto, guardarProducto};
-
-/*productDetail, editarProducto, guardarEdicionProducto, borrarProducto, cart*/
+module.exports = {productsGet, crearProducto, guardarProducto, productDetail, editarProducto, guardarEdicionProducto, borrarProducto, cart};
