@@ -3,7 +3,7 @@
 
     
     <main>
-        <form action="/productos/crear" method="POST"> <!-- NO VA /GUARDAR la ruta ? -->
+        <form action="/productos/edit/:id?_method=PUT" method="POST"> <!-- NO VA /GUARDAR la ruta ? -->
             <!--enctype="multipart/form-data"-->
             <section class="form-register">
                 <div class="logo1">
@@ -12,14 +12,14 @@
                     </a>
                 </div>
                 <h4>NUEVO PRODUCTO</h4>
-                <input class="controls" type="text" name="tituloProducto" id="tituloProducto" placeholder="tituloProducto">
-                <textarea id="controls" name="descripcion-area" rows="10" id="descripcion-area" placeholder="descripcion-area"></textarea>
-                <input class="agregar-foto" type="file" name="foto-1" id="foto-1" accept=".jpg, .png, .jpeg" placeholder="Agregar Foto Frente">
-                <input class="agregar-foto" type="file" name="foto-2" id="foto-2" accept=".jpg, .png, .jpeg" placeholder="Agregar Foto Frente">
-                <input class="agregar-foto" type="file" name="foto-3" id="foto-3" accept=".jpg, .png, .jpeg" placeholder="Agregar Foto Frente">
-                <input class="controls" type="number" name="precio" id="password" placeholder="Precio">
-                <input class="controls" type="number" name="precio-promo" id="precio-promo" placeholder="Precio Promocional">
-                <input class="controls" type="number" name="sku" id="sku" placeholder="sku">
+                <input class="controls" type="text" name="tituloProducto" id="tituloProducto" value="<%= productoParaEditar.tituloProducto  %> ">
+                <textarea id="controls" name="descripcion-area" rows="10" id="descripcion-area" value="<%= productoParaEditar.descripcion %> "></textarea>
+                <input class="agregar-foto" type="file" name="foto-1" id="foto-1" accept=".jpg, .png, .jpeg" value="<%= productoParaEditar.foto-1 %> ">
+                <input class="agregar-foto" type="file" name="foto-2" id="foto-2" accept=".jpg, .png, .jpeg" value="<%= productoParaEditar.foto-2 %> ">
+                <input class="agregar-foto" type="file" name="foto-3" id="foto-3" accept=".jpg, .png, .jpeg" value="<%= productoParaEditar.foto-3 %> ">
+                <input class="controls" type="number" name="precio" id="password" value="<%= productoParaEditar.precio %> ">
+                <input class="controls" type="number" name="precio-promo" id="precio-promo" value="<%= productoParaEditar.precio-promo %> ">
+                <input class="controls" type="number" name="sku" id="sku" value="<%= productoParaEditar.sku %> ">
                 <label for="talle">TALLE</label>
                 <select id="talle" name="talle">
                     <option value="small">SMALL</option>

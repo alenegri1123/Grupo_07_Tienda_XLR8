@@ -29,6 +29,21 @@ const guardarProducto = (req, res) => {
     return res.redirect('/');
 }
 
+const buscarProducto = (req, res) => {
+    let busquedaProducto = req.query.search;
+    res.send(busquedaProducto);
+
+    let productosEncontrados = [];
+    for (let i = 0; i < users.length; i++) {
+        if (productos[i].tituloProducto.includes(busquedaProducto)) {
+            productosEncontrados.push(users[i]);
+        }        
+    }
+    res.render('productosEncontrados', {productosEncontrados: productosEncontrados});
+}
+
+
+
 const productDetail = (req, res) => {
     const productoId = req.params.id;
     const producto = productos.find(producto => producto.id == productoId);
@@ -36,7 +51,10 @@ const productDetail = (req, res) => {
 }
 
 const editarProducto = (req, res) => {
-    res.render('/detalle/:id')
+    let productoId = req.params.productoId //
+    const productoParaEditar = productos[productoId]; //
+    res.render('/products/editProduct', { productoParaEditar }); //
+    res.send(productoId);
 }
 
 const guardarEdicionProducto = (req, res) => {
@@ -51,4 +69,4 @@ const cart = (req, res) => {
     res.render('products/productCart')
 }
 
-module.exports = {productsGet, crearProducto, guardarProducto, productDetail, editarProducto, guardarEdicionProducto, borrarProducto, cart};
+module.exports = {productsGet, crearProducto, guardarProducto, productDetail, editarProducto, guardarEdicionProducto, borrarProducto, cart,buscarProducto};

@@ -1,6 +1,10 @@
 const { fs } = require('fs');
 const path = require('path');
 
+const listUsers = function(req, res) {
+    res.render('userList',  {'users': users});
+}
+
 const register = (req, res) => {
     res.render('users/register')
 }
@@ -8,10 +12,13 @@ const register = (req, res) => {
 const creandoUsuario = (req, res) => {
     res.send(req.body);
     let usuario = {
-        nombre: req.body.nombres,
-        correo: req.body.correo,
-        contraseña: req.body.password
-        // FALTARIAN DATOS COMO TEL Y EDAD AGREGAR AL FORMULARIO
+        nombre: req.body.name,
+        apellido: req.body.apellido,
+        correo: req.body.email,
+        telefono: req.body.telefono,
+        contraseña: req.body.password,
+        fechaNacimiento: req.body.date,
+        genero: req.body.genero
     }
 
     let usuarioJSON = JSON.stringify(usuario);
@@ -22,9 +29,9 @@ const creandoUsuario = (req, res) => {
     res.redirect('/users/userList');
 }
 
-/*const login = (req, res) => {
+const log_in = (req, res) => {
     res.render('users/login')
-}*/
+}
 
 const login = (req, res) => {
     if (req.session.numeroVisitas == undefined){
@@ -34,15 +41,10 @@ const login = (req, res) => {
         //res.render('mostrarNumeroSession',function (req,res){
             //res.send('Session tiene el número' + req.session.numeroVisitas)
         //})   
+        
 };
 
-const listUsers = function(req, res) {
-    let users = [
-        // Logica
 
-    ];
-    res.render('userList',  {'users': users});
-}
 
 const buscarUsuario = (req, res) => {
     let busquedaUsuario = req.query.search;
@@ -58,9 +60,9 @@ const buscarUsuario = (req, res) => {
 }
 
 const editarUsuario = (req, res) => {
-    let idUser = req.params.idUser;
+    let idUser = req.params.idUser;// Logica de levantar usuarios de base de datos
 
-    // Logita de levantar usuarios de base de datos
+    
 
     let userParaEditar = users[idUser]; // El usuario para editar, va a ser el ID elegido
 
@@ -83,4 +85,4 @@ const borrarUsuario = (req, res) => {
 
 
 
-module.exports = {register, creandoUsuario, login, listUsers, buscarUsuario, editarUsuario, guardarEdicionUsuario, borrarUsuario};
+module.exports = {register, creandoUsuario, login, listUsers, buscarUsuario, editarUsuario, guardarEdicionUsuario, borrarUsuario, log_in};
