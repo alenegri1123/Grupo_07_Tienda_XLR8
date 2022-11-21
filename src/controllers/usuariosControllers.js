@@ -22,9 +22,19 @@ const creandoUsuario = (req, res) => {
     res.redirect('/users/userList');
 }
 
-const login = (req, res) => {
+/*const login = (req, res) => {
     res.render('users/login')
-}
+}*/
+
+const login = (req, res) => {
+    if (req.session.numeroVisitas == undefined){
+        req.session.numeroVisitas = 0;}
+        req.session.numeroVisitas++;
+        res.send('Session tiene el número' + req.session.numeroVisitas)  
+        //res.render('mostrarNumeroSession',function (req,res){
+            //res.send('Session tiene el número' + req.session.numeroVisitas)
+        //})   
+};
 
 const listUsers = function(req, res) {
     let users = [

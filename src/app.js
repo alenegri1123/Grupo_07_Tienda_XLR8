@@ -3,14 +3,17 @@
 const express = require('express');
 const path = require('path');
 const methodOverride = require('method-override');
+const session = require('express-session');
 
 // ******** EXPRESS () - (dont touch) ******** //
 const app = express();
+
 
 // ******** Middlewares - (dont touch) ******** //
 app.use(express.static(path.join(__dirname, '../public')));
 app.use(express.urlencoded()); //por que no se usa {extended: false} ??
 app.use(methodOverride('_method')); //metodo para SOBRE-ESCRIBIR el metodo original del formulario (PUT o DELETE)
+app.use(session({secret: "ES UN SECRETO!"}));
 
 // ******** Template Engine - (dont touch) ******** //
 app.set('view engine', 'ejs');

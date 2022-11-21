@@ -7,6 +7,7 @@ router.get('/registro', usuariosController.register);
 router.post('/registro', usuariosController.creandoUsuario);
 
 router.get('/login', usuariosController.login)
+router.get('/mostrarNumeroSession', usuariosController.login)
 
 router.get('/listaUsuarios', usuariosController.listUsers);
 router.get('/buscar', usuariosController.buscarUsuario);
