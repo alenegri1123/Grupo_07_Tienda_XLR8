@@ -13,7 +13,7 @@ const app = express();
 app.use(express.static(path.join(__dirname, '../public')));
 app.use(express.urlencoded()); //por que no se usa {extended: false} ??
 app.use(methodOverride('_method')); //metodo para SOBRE-ESCRIBIR el metodo original del formulario (PUT o DELETE)
-app.use(session({secret: "ES UN SECRETO!"}));
+// app.use(session({secret: "ES UN SECRETO!"}));
 
 // ******** Template Engine - (dont touch) ******** //
 app.set('view engine', 'ejs');

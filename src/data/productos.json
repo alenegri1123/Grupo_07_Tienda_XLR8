@@ -392,5 +392,20 @@
     "genero": "unisex",
     "categories": "remeras",
     "id": 26
+  },
+  {
+    "tituloProducto": "asasasas",
+    "descripcion-area": "asasasasa",
+    "foto-1": "",
+    "foto-2": "",
+    "foto-3": "",
+    "precio": "11212121",
+    "precio-promo": "121212",
+    "sku": "1212121",
+    "talle": "medium",
+    "color": "gris",
+    "genero": "hombre",
+    "categories": "remeras",
+    "id": 27
   }
 ]

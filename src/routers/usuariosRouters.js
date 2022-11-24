@@ -6,8 +6,8 @@ const usuariosController = require('../controllers/usuariosControllers');
 router.get('/registro', usuariosController.register);
 router.post('/registro', usuariosController.creandoUsuario);
 
-router.get('/log_in', usuariosController.log_in)
-router.post('/mostrarNumeroSession', usuariosController.login)
+router.get('/login', usuariosController.login)
+router.post('/mostrarNumeroSession', usuariosController.log_in)
 
 router.get('/listaUsuarios', usuariosController.listUsers);
 router.get('/buscar', usuariosController.buscarUsuario);

@@ -1,39 +1,40 @@
-const { fs } = require('fs');
 const path = require('path');
+const usersFilePath = path.join(__dirname, '../data/usuarios.json'); 
+const fs = require('fs');
+const usuarios = JSON.parse(fs.readFileSync(usersFilePath, {encoding: 'utf-8'}));
 
-const listUsers = function(req, res) {
-    res.render('userList',  {'users': users});
+
+const listUsers = (req, res) => {
+    res.render('userList',  {'usuarios': usuarios})
 }
 
 const register = (req, res) => {
     res.render('users/register')
 }
 
-const creandoUsuario = (req, res) => {
-    res.send(req.body);
-    let usuario = {
-        nombre: req.body.name,
-        apellido: req.body.apellido,
-        correo: req.body.email,
-        telefono: req.body.telefono,
-        contraseña: req.body.password,
-        fechaNacimiento: req.body.date,
-        genero: req.body.genero
-    }
-
-    let usuarioJSON = JSON.stringify(usuario);
-
-    //fs.writeFileSync('usuarios.json', usuarioJSON); //siempre PISA el contenido del archivo (re-escribe)
-    fs.appendFileSync('usuarios.json', usuarioJSON); // Asi agrega al final del archivo
-
-    res.redirect('/users/userList');
-}
-
-const log_in = (req, res) => {
+const login = (req, res) => {
     res.render('users/login')
 }
 
-const login = (req, res) => {
+const creandoUsuario = (req, res) => {
+     // Agregar usuario
+     const campoNuevoUsuario = req.body;
+
+     // Pushea el usuario al Array
+     campoNuevoUsuario.id = usuarios.length+1;
+     usuarios.push(campoNuevoUsuario)
+ 
+     // Lo convierte a texto plano (JSON)
+     fs.appendFileSync(usersFilePath, JSON.stringify(usuarios, null, 2));
+     // el 2 es para guardar prolijo al JSON
+ 
+     // Retornar el resultado
+ 
+     return res.render('users/userList')
+ 
+}
+
+const log_in = (req, res) => {
     if (req.session.numeroVisitas == undefined){
         req.session.numeroVisitas = 0;}
         req.session.numeroVisitas++;
@@ -52,7 +53,7 @@ const buscarUsuario = (req, res) => {
 
     let usuariosEncontrados = [];
     for (let i = 0; i < users.length; i++) {
-        if (users[i].name.includes(busquedaUsuario)) {
+        if (usuarios[i].name.includes(busquedaUsuario)) {
             usuariosEncontrados.push(users[i]);
         }        
     }
@@ -60,13 +61,13 @@ const buscarUsuario = (req, res) => {
 }
 
 const editarUsuario = (req, res) => {
-    let idUser = req.params.idUser;// Logica de levantar usuarios de base de datos
+    const idUser = req.params.idUser;// Logica de levantar usuarios de base de datos
 
     
 
-    let userParaEditar = users[idUser]; // El usuario para editar, va a ser el ID elegido
+    const userParaEditar = users[idUser]; // El usuario para editar, va a ser el ID elegido
 
-    res.render('userEdit', {userParaEditar: userParaEditar});
+    res.render('/users/userEdit', { userParaEditar });
 
     res.send(idUser);
 
@@ -74,9 +75,7 @@ const editarUsuario = (req, res) => {
 }
 
 const guardarEdicionUsuario = (req, res) => {
-    console.log(req.body)
-    // logica
-    res.redirect('/');
+  
 }
 
 const borrarUsuario = (req, res) => {
@@ -85,4 +84,4 @@ const borrarUsuario = (req, res) => {
 
 
 
-module.exports = {register, creandoUsuario, login, listUsers, buscarUsuario, editarUsuario, guardarEdicionUsuario, borrarUsuario, log_in};
+module.exports = {register, creandoUsuario, login, listUsers, buscarUsuario, editarUsuario, guardarEdicionUsuario, borrarUsuario, log_in,  };

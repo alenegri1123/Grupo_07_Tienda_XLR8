@@ -1,13 +1,45 @@
 [
-    {
-        "name": "Alejandro",
-        "apellido": "Negri",
-        "email": "alemnegri84@gmail.com",
-        "telefono": 1122926663,
-        "password": "xyz12345",
-        "date": "23/11/1984",
-        "genero": "hombre"
-
-    }
-    
+  {
+    "name": "Tadeo",
+    "apellido": "Abbruzzese",
+    "email": "tadeoabbruzzese@gmail.com",
+    "telefono": "121212121",
+    "password": [
+      "12121212121211",
+      "12121212121211"
+    ],
+    "date": "2022-11-07",
+    "genero": "Masculino",
+    "id": 2
+  },
+  {
+    "name": "Tadeo",
+    "apellido": "Abbruzzese",
+    "email": "11212121asd@gmail.com",
+    "telefono": "01123221907",
+    "password": "12121212121211",
+    "date": "2022-11-09",
+    "genero": "Masculino",
+    "id": 2
+  },
+  {
+    "name": "Tadeo",
+    "apellido": "Abbruzzese",
+    "email": "11212121asd@gmail.com",
+    "telefono": "01123221907",
+    "password": "12121212121211",
+    "date": "2022-11-09",
+    "genero": "Masculino",
+    "id": 3
+  },
+  {
+    "name": "Tadeo",
+    "apellido": "Abbruzzese",
+    "email": "tadeoabbruzzese@gmail.com",
+    "telefono": "01123221907",
+    "password": "12121212121211",
+    "date": "2022-11-29",
+    "genero": "Masculino",
+    "id": 4
+  }
 ]
